@@ -295,3 +295,60 @@ console.log(isPrime(4)); // false
 // Big-O = O(sqrt(n))
 
 ```
+
+4. Power of Two
+
+**Problem** - Give a positive integer 'n', determine if the number is power of 2 or not
+
+-   An integer is power of two if there exist an integer 'x' such that 'n' === 2^x
+
+-   isPowerOfTwo(1) = true (2^0)
+
+-   isPowerOfTwo(2) = true (2 ^ 1)
+
+-   isPowerOfTwo(5) = false
+
+```JavaScript
+	function powerOfTwo(n) {
+    if (n < 1) {
+        return false;
+    }
+
+    while (n > 1) {
+        if (n % 2 !== 0) {
+            return false;
+        }
+
+        n = n / 2;
+    }
+
+    return true;
+}
+
+console.log(powerOfTwo(1)); // true
+console.log(powerOfTwo(2)); // true
+console.log(powerOfTwo(5)); // false
+
+// Big-O = O(logn)
+
+
+```
+
+# Optimized Bitwise
+
+```JavaScript
+	function isPowerOfTwoBitwise(n) {
+    if (n < 1) {
+        return false;
+    }
+
+    return (n & (n - 1)) === 0;
+}
+
+
+console.log(isPowerOfTwoBitwise(1)); // true
+console.log(isPowerOfTwoBitwise(2)); // true
+console.log(isPowerOfTwoBitwise(5)); // false
+
+// Big-O = O(1)
+```
