@@ -352,3 +352,25 @@ console.log(isPowerOfTwoBitwise(5)); // false
 
 // Big-O = O(1)
 ```
+
+# Recursion
+
+## What?
+
+-   Recursion is a problem solving technique where the solution depends on solution to smaller instance of the same problem
+
+-   Recursion is when a function calls itself
+
+## Why?
+
+-   A great technique to simplify your solution
+
+-   If you find yourself breaking down your problem into smaller versions of the same problem, recursion is very useful
+
+# A few points about recursion
+
+-   Every recursive solution needs to have a base case - a condition to terminate the recursion
+
+-   Recursion might simplify solving a problem but it does not always translate to a faster solution. A recursive solution may be far worse compared to an iterative solution.
+
+-   Recursion is a topic that is not the most stright forward to understand. Do not give up if you struggle with the concept
