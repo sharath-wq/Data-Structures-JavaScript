@@ -116,3 +116,76 @@ while (n > 1) {
 -   Multiple algorithms with the same programming language can be implemented in different ways.
 -   The same algorithm with the same programming language can be implemented in different ways.
 -   When writing programs at work, don't lose sight of the big picture. Rather than writing clever code, focus on writing code that is simple to read and maintain.
+
+# Objects - Big-O
+
+-   An object is a collection of key vlalue pairs
+
+```JavaScript
+	const person = {
+		firstName: "Bruce",
+		lastName: "Wayne"
+	}
+```
+
+-   Insert - O(1)
+-   Remove - O(1)
+-   Access - O(1)
+-   Search - O(n)
+-   Object.keys() - O(n)
+-   Object.values() - O(n)
+-   Object.entries() - O(n)
+
+# Array - Big-O
+
+-   An array is an ordered collection of values
+
+```JavaScript
+	const odd = [1, 2, 5, 7, 9]
+```
+
+-   Insert / remove at end - O(1)
+-   Insert / remove at beginnning - O(n)
+-   Access - O(1)
+-   Search - O(n)
+-   Push / Pop - O(1)
+-   Shift / Unshift / Concat / Slice / Splice - O(n)
+-   forEach / map / filter/ reduce - O(n)
+
+# Math Algorithms
+
+-   Fibonacci sequence
+-   Factorial of a number
+-   Prime number
+-   Power of two
+-   Recursion
+-   Fibonacci sequence with recursion
+-   Factorial of a number wiht recursion
+
+1. Fibonacci Sequence
+
+**Problem** - Give a number 'n', find the first 'n' elements of the fibonacci sequence
+
+-   In mathematics, the Fibonacci sequence is a sequence in which each number is the sum of the two preceding onces
+-   The first two numbers in thet sequence are 0 and 1.
+
+-   fibonacci(2) = [0, 1]
+-   fibonacci(3) = [0, 1, 1]
+-   fibonacci(7) = [0, 1, 1, 2, 3, 5, 8]
+
+```JavaScript
+	function fibonacci(n) {
+    const fib = [0, 1];
+    for (let i = 2; i < n; i++) {
+        fib[i] = fib[i - 1] + fib[i - 2];
+    }
+    return fib;
+}
+
+console.log(fibonacci(2)); // [0, 1]
+console.log(fibonacci(3)); // [0, 1, 1]
+console.log(fibonacci(7)); // [0, 1, 1, 2, 3, 5, 8]
+
+Big-O = O(n)
+
+```
