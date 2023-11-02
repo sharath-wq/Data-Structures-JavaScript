@@ -3,7 +3,9 @@ function isPrime(n) {
         return false;
     }
 
-    for (let i = 2; i < n; i++) {
+    console.log(Math.sqrt(n));
+
+    for (let i = 2; i <= Math.sqrt(n); i++) {
         if (n % i === 0) {
             return false;
         }
@@ -16,4 +18,4 @@ console.log(isPrime(1)); // false
 console.log(isPrime(5)); // true
 console.log(isPrime(4)); // false
 
-// Big-O = O(n)
+// Big-O = O(sqrt(n))
