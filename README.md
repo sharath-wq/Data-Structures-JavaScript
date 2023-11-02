@@ -103,15 +103,16 @@ while (n > 1) {
 }
 
 
+```
+
 ### Space complexity
 
-* O(1) - Constant
-* O(n) - Linear
-* O(longn) - Logarithmic
+-   O(1) - Constant
+-   O(n) - Linear
+-   O(longn) - Logarithmic
 
 ### Few points to note
 
-* Multiple algorithms with the same programming language can be implemented in different ways.
-* The same algorithm with the same programming language can be implemented in different ways.
-* When writing programs at work, don't lose sight of the big picture. Rather than writing clever code, focus on writing code that is simple to read and maintain.
-```
+-   Multiple algorithms with the same programming language can be implemented in different ways.
+-   The same algorithm with the same programming language can be implemented in different ways.
+-   When writing programs at work, don't lose sight of the big picture. Rather than writing clever code, focus on writing code that is simple to read and maintain.
