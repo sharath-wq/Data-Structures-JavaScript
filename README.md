@@ -189,3 +189,31 @@ console.log(fibonacci(7)); // [0, 1, 1, 2, 3, 5, 8]
 Big-O = O(n)
 
 ```
+
+2. Factorial of a number
+
+**Problem** - Given an integer 'n', find the factorial of that integer
+
+-   In mathamatics, the factorial of a non-negetive integer 'n', denetoed n!, is the product of all positive integers less than or equal to 'n'.
+
+-   Factorial of 0 is 1.
+
+-   Factorial(4) = 4 \* 3 \* 2 \* 1 = 24
+-   Factorial(5) = 5 \* 4 \* 3 \* 2 \* 1 = 120
+
+```JavaScript
+	function factorial(n) {
+    let result = 1;
+    for (let i = 2; i <= n; i++) {
+        result = result * i;
+    }
+    return result;
+}
+
+console.log(factorial(1)); // 1
+console.log(factorial(4)); // 24
+console.log(factorial(5)); // 120
+
+// Big-O = O(n)
+
+```
